@@ -1,13 +1,46 @@
 <body id="top">
-  <div class="overlay light">
-
+  <div>
     <div class="wrapper row1">
+
+
       <header id="header" class="hoc clear">
-        <div id="logo" class="fl_left">
-          <h1><a href="index.html">Aventura Chapaca</a></h1>
+        <div class="row">
+          <div id="logo" class="fl_left">
+            <h1><a href="index.html">Aventura Chapaca</a></h1>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="" style="text-align: right;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 clear">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home/tours']">TOURS</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home/tours']">MI CUENTA</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home/tours']">NOSOTROS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
         </div>
-        <nav id="mainav" class="fl_right">
-          <ul class="clear">
+
+
+
+        <!-- <nav id="mainav" class="fl_right">
+          <a href=""></a>
+          <ul class="clear nav-menu">
             <li class="active"><a href="index.html">INICIO</a></li>
             <li><a class="drop" [routerLink]="['/home/tours']">TOURS</a>
               <ul>
@@ -16,11 +49,16 @@
             </li>
             <li class="active"><a href="index.html">MI CUENTA</a></li>
             <li class="active"><a href="index.html">NOSOTROS</a></li>
-
           </ul>
-        </nav>
-        <!-- ################################################################################################ -->
+        </nav> -->
+
+
+
+
       </header>
+
+
+
     </div>
   </div>
 
