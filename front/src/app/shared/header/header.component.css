@@ -1,0 +1,27 @@
+/* Estilos para el menú desplegable responsive */
+@media screen and (max-width: 767px) {
+  #mainav .navbar-collapse {
+    display: none;
+  }
+
+  #mainav .navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  #mainav .navbar-nav {
+    flex-direction: column;
+  }
+
+  #mainav .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
