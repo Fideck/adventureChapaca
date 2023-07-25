@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioModule } from './modules/home/inicio.module';
+import { AccesoModule } from './modules/auth/acceso.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { InicioModule } from './modules/home/inicio.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InicioModule
+    InicioModule,
+    AccesoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

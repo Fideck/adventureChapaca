@@ -6,6 +6,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./modules/home/inicio.module').then(m => m.InicioModule),
   },
+  {
+    path: 'auth',
+    loadChildren: () => import('./modules/auth/acceso.module').then(m => m.AccesoModule),
+  },
 ];
 
 @NgModule({
