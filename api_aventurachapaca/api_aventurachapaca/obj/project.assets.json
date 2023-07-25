@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\chapacoToursProyecto\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
+      "projectUniqueName": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\Aventurachapaca2\\aventuraChapaca\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
       "projectName": "api_aventurachapaca",
-      "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\chapacoToursProyecto\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
+      "projectPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\Aventurachapaca2\\aventuraChapaca\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
       "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\chapacoToursProyecto\\api_aventurachapaca\\api_aventurachapaca\\obj\\",
+      "outputPath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\Aventurachapaca2\\aventuraChapaca\\api_aventurachapaca\\api_aventurachapaca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

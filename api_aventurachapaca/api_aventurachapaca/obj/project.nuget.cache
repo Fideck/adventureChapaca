@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lMTjZq0Tfbe2u0IvIghHfbQDnkBGpiupNSXroI0uXAMqFYkdfFDReA3mL6A8+uc1P/Q7No0B6VQBs2f84efaLw==",
+  "dgSpecHash": "oe2/FOzBvYFCPtEZOXDU950JzDC6VbF5OQDKbCEIKFjxy1nKyO6hBn7w34O8j9HXJ+BDYIfLDjYUdKa4Zdl1Jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\chapacoToursProyecto\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
+  "projectFilePath": "C:\\Users\\mauri\\OneDrive\\Escritorio\\UPDS\\Negocios Electronicos\\Aventurachapaca2\\aventuraChapaca\\api_aventurachapaca\\api_aventurachapaca\\api_aventurachapaca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\mauri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
