@@ -11,7 +11,7 @@ namespace api_aventurachapaca.Models
         public byte estado { get; set; }
         public int precio { get; set; }
         public int ReservaId { get; set; }
-        public ReservaModel reserva { get; set; }
+        //public ReservaModel reserva { get; set; }
         public DateTime fecha { get; set;}
     }
 }
