@@ -2,30 +2,32 @@
 
 namespace api_aventurachapaca.Models
 {
-    public class PersonModel
+    public class TourModel
     {
         [Key]
         public int Id { get; set; }
-
-        [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public string tipodocumento { get; set; }
-
-        [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public string documento { get; set; }
-
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
         public string nombre { get; set; }
 
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public string apeliido { get; set; }
+        public string descripcion { get; set; }
 
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public int genero { get; set; }
+        public int precio { get; set; }
 
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public DateTime fechanac { get; set; }
+        public int duracion { get; set; }
 
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public string telefono { get; set; }
+        public string adicionales { get; set; }
+
+        [Required(ErrorMessage = "Este campo no debe estar vacio")]
+        public string recomendaciones { get; set; }
+
+        [Required(ErrorMessage = "Este campo no debe estar vacio")]
+        public int estado { get; set; }
+
+        public int PersonId { get; set; }
+        public PersonModel person { get; set; }
     }
 }

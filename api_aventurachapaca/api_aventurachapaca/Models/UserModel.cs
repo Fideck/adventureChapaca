@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
+
 namespace api_aventurachapaca.Models
 {
-    public class User
+    public class UserModel
     {
         [Key]
         public int Id { get; set; }
@@ -19,9 +20,6 @@ namespace api_aventurachapaca.Models
 
         [Required(ErrorMessage = "Este campo no debe estar vacio")]
         public int estado { get; set; }
-
-        [Required(ErrorMessage = "Este campo no debe estar vacio")]
-        public string UserName { get; set; }
 
         public int PersonId { get; set; }
         public PersonModel person { get; set; }
