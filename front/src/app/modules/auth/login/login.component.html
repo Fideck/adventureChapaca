@@ -1,7 +1,23 @@
+<div class="wrapper row0" style="background-color: black;">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><i class="fa fa-whatsapp"></i> <a href="index.html"> +591 68691266</a> </li>
+        <li><i class="fa fa-envelope-o"></i> <a href="index.html"> aventuraChapaca@gmail.com </a> </li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><a href="index.html" title="Inicio"> <i class="fa fa-lg fa-home"></i></a></li>
+        <li><a [routerLink]="['/auth/login']" title="Login"> <i class="fa fa-lg fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-
-<div class="overlay light">
+<div class="light">
   <div class="wrapper row1">
+
     <header id="header" class="hoc clear">
       <div class="row">
         <div id="logo" class="fl_left">
@@ -11,7 +27,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="" style="text-align: right;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -20,7 +38,7 @@
                   <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/home/tours']">TOURS</a>
+                  <a class="nav-link" [routerLink]="['/home/#all-tours']">TOURS</a>
                 </li>
 
                 <li class="nav-item">
@@ -34,58 +52,53 @@
             </div>
           </div>
         </nav>
-
       </div>
+
     </header>
-  </div>
+    <section class="vh-100" style="background-color: #191d20;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="../../../../assets/images/background_login.png" alt="login form" class="img-fluid"
+                    style="border-radius: 1rem 0 0 1rem; width: 100%; height:85vh" />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center" style="background-color: #dfded9;">
+                  <div class="card-body p-4 p-lg-5 text-black">
 
-  <section class="vh-100" style="background-color: #191d20;">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col col-xl-10">
-          <div class="card" style="border-radius: 1rem;">
-            <div class="row g-0">
-              <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="../../../../assets/images/background_login.png"
-                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; width: 100%; height:85vh" />
-              </div>
-              <div class="col-md-6 col-lg-7 d-flex align-items-center" style="background-color: #dfded9;">
-                <div class="card-body p-4 p-lg-5 text-black">
+                    <form>
+                      <div class="" style="text-align: center;">
+                        <img style="text-align:center; width:40%" src="../../../../assets/images/logo.png" alt="">
+                      </div>
 
-                  <form>
-                    <div class="" style="text-align: center;">
-                     <img style="text-align:center; width:40%" src="../../../../assets/images/logo.png" alt="">
-                    </div>
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia Sesion con tu cuenta</h5>
 
-                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia Sesion con tu cuenta</h5>
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example17">Email</label>
+                      </div>
 
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example17" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example17">Email</label>
-                    </div>
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example27">Contraseña</label>
+                      </div>
 
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example27" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example27">Contraseña</label>
-                    </div>
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-dark btn-lg btn-block" type="button">Iniciar Sesion</button>
+                      </div>
+                      <p class="mb-5 pb-lg-2" style="color: #191d20;">¿No tienes una cuenta? <a
+                          [routerLink]="['/auth/register-user']" style="color: #ed2839;">Registrate Aqui</a></p>
+                    </form>
 
-                    <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="button">Iniciar Sesion</button>
-                    </div>
-                    <p class="mb-5 pb-lg-2" style="color: #191d20;">¿No tienes una cuenta? <a href="#!"
-                        style="color: #ed2839;">Registrate Aqui</a></p>
-                  </form>
-
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
 </div>
-
-
-

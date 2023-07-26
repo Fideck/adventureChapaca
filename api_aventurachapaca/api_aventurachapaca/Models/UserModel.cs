@@ -22,6 +22,6 @@ namespace api_aventurachapaca.Models
         public int estado { get; set; }
 
         public int PersonId { get; set; }
-        public PersonModel person { get; set; }
+        public PersonModel Person { get; set; }
     }
 }
