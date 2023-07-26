@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api_aventurachapaca.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UsuarioController : Controller
     {
         private readonly ApplicationContext contexto;
