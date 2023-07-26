@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace api_aventurachapaca.Models
 {
@@ -31,6 +30,6 @@ namespace api_aventurachapaca.Models
         public int PersonId { get; set; }
         public PersonModel person { get; set; }
 
-        public List<PagoModel> Pago { get; set; }
+        public List<PagoModel> Pago { get; set; } 
     }
 }
