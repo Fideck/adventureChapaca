@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioModule } from './modules/home/inicio.module';
 import { AccesoModule } from './modules/auth/acceso.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogContent } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { AccesoModule } from './modules/auth/acceso.module';
     AppRoutingModule,
     InicioModule,
     AccesoModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

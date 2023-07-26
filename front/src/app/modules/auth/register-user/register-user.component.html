@@ -1,101 +1,148 @@
-<div class="wrapper row0" style="background-color: black;">
-  <div id="topbar" class="hoc clear">
-    <div class="fl_left">
-      <ul class="nospace">
-        <li><i class="fa fa-whatsapp"></i> <a href="index.html"> +591 68691266</a> </li>
-        <li><i class="fa fa-envelope-o"></i> <a href="index.html"> aventuraChapaca@gmail.com </a> </li>
-      </ul>
-    </div>
-    <div class="fl_right">
-      <ul class="nospace">
-        <li><a href="index.html" title="Inicio"> <i class="fa fa-lg fa-home"></i></a></li>
-        <li><a [routerLink]="['/auth/login']" title="Login"> <i class="fa fa-lg fa-user"></i></a></li>
-      </ul>
+<div style="background-color: antiquewhite;">
+  <div class="wrapper row0" style="background-color: black;">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left">
+        <ul class="nospace">
+          <li><i class="fa fa-whatsapp"></i> <a href="index.html"> +591 68691266</a> </li>
+          <li><i class="fa fa-envelope-o"></i> <a href="index.html"> aventuraChapaca@gmail.com </a> </li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul class="nospace">
+          <li><a href="index.html" title="Inicio"> <i class="fa fa-lg fa-home"></i></a></li>
+          <li><a [routerLink]="['/auth/login']" title="Login"> <i class="fa fa-lg fa-user"></i></a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="light">
-  <div class="wrapper row1">
+  <div class="light">
+    <div class="wrapper row1">
 
 
-    <header id="header" class="hoc clear">
-      <div class="row">
-        <div id="logo" class="fl_left">
-          <h1><a href="index.html">Aventura Chapaca</a></h1>
-        </div>
-
-
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="" style="text-align: right;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 clear">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/src/app/modules/home/inicio/inicio.component.html#all-tours" >TOURS</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/home/tours']">MI CUENTA</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/home/tours']">NOSOTROS</a>
-                </li>
-              </ul>
-            </div>
+      <header id="header" class="hoc clear">
+        <div class="row">
+          <div id="logo" class="fl_left">
+            <h1><a href="index.html">Aventura Chapaca</a></h1>
           </div>
-        </nav>
+
+
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="" style="text-align: right;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 clear">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/app/modules/home/inicio/inicio.component.html#all-tours">TOURS</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home/tours']">MI CUENTA</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/home/tours']">NOSOTROS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </header>
+    </div>
+  </div>
+
+
+
+  <h2 mat-dialog-title>{{ operacion }} Usuario</h2>
+  <form [formGroup]="form" (ngSubmit)='agregarUsuario()'>
+    <mat-dialog-content>
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Nombres</mat-label>
+            <input formControlName="nombrePersona" matInput>
+          </mat-form-field>
+
+          <div class="error">
+            <span *ngIf="form.get('nombrePersona')?.hasError('required') && form.get('nombrePersona')?.touched">
+              El nombre es un campo <strong>requerido</strong>
+            </span>
+          </div>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Apellidos</mat-label>
+            <input formControlName="apellidoPersona" matInput>
+          </mat-form-field>
+          <div class="error">
+            <span *ngIf="form.get('apellidoPersona')?.hasError('required') && form.get('apellidoPersona')?.touched">
+              El apellido es un campo <strong>requerido</strong>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
 
       </div>
-    </header>
-  </div>
-</div>
 
+      <div class="row">
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="contrasenia" matInput>
+            <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
 
-<div class="container-sm">
-  <br>
-  <br>
-  <h1>Registro De Usuario</h1>
+          <!-- <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input formControlName="contrasenia" matInput>
+            <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field> -->
+          <div class="error">
+            <span *ngIf="form.get('contrasenia')?.hasError('required')&& form.get('contrasenia')?.touched">
+              La contraseña es un campo <strong>requerido</strong>
+            </span>
+          </div>
+        </div>
+        <div class="column">
 
-  <form action="">
-    
+          <div class="error">
+            <span *ngIf="form.get('rolid')?.hasError('required')&& form.get('rolid')?.touched">
+              El rol es un campo <strong>requerido</strong>
+            </span>
+          </div>
+        </div>
+
+        
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput>
+          </mat-form-field>
+          <div class="error">
+            <!-- <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">El email es un campo
+              <strong>Requerido</strong></span> -->
+            <span *ngIf="form.get('email')?.hasError('email')">Debe ingresar una direccion de email valida</span>
+          </div>
+        </div>
+      </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button type="submit" [disabled]="this.form.invalid" class="btn btn-info b" mat-button >Aceptar</button>
+      <button type="button" class="btn btn-warning c" mat-button mat-dialog-close>Cancelar</button>
+    </mat-dialog-actions>
   </form>
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">@</span>
-    <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="basic-addon1">
-  </div>
 
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Nombre de usuario del destinatario" aria-label="Nombre de usuario del destinatario" aria-describedby="basic-addon2">
-    <span class="input-group-text" id="basic-addon2">@example.com</span>
-  </div>
-
-  <label for="basic-url" class="form-label">Tu URL</label>
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-  </div>
-
-  <div class="input-group mb-3">
-    <span class="input-group-text">$</span>
-    <input type="text" class="form-control" aria-label="Cantidad (al dólar más cercano)">
-    <span class="input-group-text">.00</span>
-  </div>
-
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario">
-    <span class="input-group-text">@</span>
-    <input type="text" class="form-control" placeholder="Servidor" aria-label="Servidor">
-  </div>
-
-  <div class="input-group">
-    <span class="input-group-text">Con textarea</span>
-    <textarea class="form-control" aria-label="With textarea"></textarea>
-  </div>
 </div>

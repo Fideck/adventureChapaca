@@ -6,6 +6,11 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialog, MatDialogActions, MatDialogContainer, MatDialogContent, MatDialogModule } from '@angular/material/dialog';
+import { MatIconAnchor, MatIconButton } from '@angular/material/button';
+import { MatOption, MatOptionModule } from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,10 @@ import { RegisterUserComponent } from './register-user/register-user.component';
     ReactiveFormsModule,
     HttpClientModule,
 
+    MatFormFieldModule,
+    MatDialogModule,
+    MatOptionModule,
+    MatIconModule,
   ],
   exports: [LoginComponent]
 })
